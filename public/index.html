@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CCQ Tracker</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1><img src="favicon.svg" alt="" width="28" height="28" style="vertical-align:-6px;margin-right:6px">CCQ Tracker</h1>
+    <span class="pill" id="asof"></span>
+    <div class="spacer"></div>
+    <button class="ghost" id="btn-token">Token</button>
+    <button class="ghost" id="btn-refresh">Cập nhật NAV (fmarket)</button>
+  </header>
+  <nav id="nav">
+    <a data-tab="dashboard" class="active">Tổng quan</a>
+    <a data-tab="transactions">Giao dịch</a>
+    <a data-tab="sell">Máy tính bán</a>
+    <a data-tab="buy">Máy tính mua</a>
+    <a data-tab="fees">Biểu phí</a>
+  </nav>
+  <main id="app">Đang tải…</main>
+
+  <script src="vendor/chart.umd.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

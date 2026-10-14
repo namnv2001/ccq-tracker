@@ -1,0 +1,17 @@
+{
+  "name": "ccq-tracker",
+  "version": "2.0.0",
+  "description": "Theo dõi danh mục chứng chỉ quỹ (CCQ) — site tĩnh trên GitHub Pages, DB JSON mã hoá trong repo",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "refresh-nav": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/refresh-nav.ts",
+    "start": "python3 -m http.server -d public 3001",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.3"
+  }
+}
